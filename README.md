@@ -22,3 +22,13 @@ Then it **elaborates** the entity defined by `$TB_ENTITY`
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+
+![ICE3 Entity Diagram](image.png)
+
+![ICE3 WaveForm Diagram](ICE3waveform.png)
+
+## Documentation
+C3C Gavin Smith, and C3C Sam Poulson helped me identify the difference between what the entity Diagram 
+looks like compared to it being an architecture diagram. Also cross referenced the input signals in
+architecure to see if the signal for ripples used 3 downto 0 or 2 down to 0.
